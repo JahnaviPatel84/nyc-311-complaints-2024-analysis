@@ -59,4 +59,4 @@ New York City’s 311 system captures millions of public complaints annually, ra
 ## Access the Dashboard
 ![NYC 311 Dashboard Preview](dashboard_preview.png)
 
-[View the Interactive NYC 311 Complaints Dashboard – 2024](#) *https://lookerstudio.google.com/s/pXw4xt_BvLQ*
+[View the Interactive NYC 311 Complaints Dashboard – 2024] *https://lookerstudio.google.com/s/pXw4xt_BvLQ*
