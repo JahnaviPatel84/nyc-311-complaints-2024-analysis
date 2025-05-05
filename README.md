@@ -1,58 +1,57 @@
-# NYC 311 Service Request Monitoring – 2024
+# NYC 311 Public Service Insight Platform – 2024
 
-This project delivers an end-to-end solution to collect, process, and analyze over 3.45 million 311 service requests submitted by New York City residents in 2024. The final output is an interactive dashboard designed to support data-informed decision-making for operational leaders, public service managers, and urban planners.
-
----
-
-## Project Summary
-
-New York City’s 311 system captures millions of public complaints annually, ranging from noise disturbances to sanitation issues. This project operationalizes that raw data into a structured, filterable system that enables stakeholders to:
-
-- Monitor complaint trends over time
-- Understand patterns by geography, time of day, and issue type
-- Evaluate resolution efficiency and departmental response volume
-- Pinpoint high-demand areas for more efficient resource allocation
+This project delivers a scalable, cloud-based reporting solution to surface operational insights from over **3.45 million NYC 311 service requests** submitted during 2024. Designed to support executive stakeholders, city planners, and public service teams, the platform enables real-time monitoring of urban service demand and responsiveness through an interactive dashboard powered by BigQuery and Looker Studio.
 
 ---
 
-## Features & Capabilities
+## Overview
 
-- **Dynamic dashboard** built in Looker Studio, powered by a structured dataset hosted in BigQuery
-- Time-based filtering by **hour**, **weekday**, and **month**
-- Aggregation by **complaint type**, **borough**, and **responsible agency**
-- **Resolution time** calculated and visualized at multiple levels
-- **Geospatial mapping** of service requests across NYC neighborhoods
+Each year, millions of New Yorkers turn to 311 to report issues related to noise, parking, sanitation, and public safety. This project organizes that signal-rich dataset into a decision-support system transforming raw complaints into a living operational layer that informs planning, prioritization, and public accountability.
 
 ---
 
-## Technology Stack
+## Key Findings
 
-| Layer              | Tools Used                                           |
-|-------------------|------------------------------------------------------|
-| Data Source        | NYC Open Data – 311 Service Requests (2024)         |
-| Data Processing    | Python (Pandas, datetime parsing, transformation)   |
-| Storage            | Google Cloud Storage (GCS)                          |
-| Query Engine       | Google BigQuery                                     |
-| Visualization      | Looker Studio (Google Data Studio)                 |
+* **Brooklyn** received the highest volume of 311 service requests in 2024  
+* A total of **3,458,170 complaints** were filed, averaging **9,474 complaints per day**  
+* **Illegal Parking** was the most commonly reported issue citywide  
+* Other top complaint types included **Noise - Residential**, **Heat/Hot Water**, and **Blocked Driveway**  
+* The **New York City Police Department (NYPD)** and the **Department of Housing Preservation and Development (HPD)** handled the majority of service requests, followed by the **Department of Sanitation (DSNY)** and the **Department of Transportation (DOT)**  
+* Complaint activity was highest in the **Afternoon** and **Evening**, with minimal volume during Early Morning hours  
+* Trends remained relatively stable throughout the year, with expected seasonal fluctuations
 
----
-
-## Key Outcomes
-
-- Enabled exploration of complaint volume across **24-hour cycles**, **weekly rhythms**, and **monthly trends**
-- Identified top complaint categories citywide and within each borough
-- Revealed departments handling the highest public service load
-- Quantified average resolution times to assess service efficiency
-- Mapped complaint hotspots for geo-targeted interventions
+These insights are delivered through an interactive interface, filterable by borough, agency, complaint type, and time dimension.
 
 ---
 
-## Deliverables
+## Solution Architecture
 
-- Cleaned and structured dataset with enriched features (e.g., resolution time, time-of-day grouping)
-- BigQuery-hosted table optimized for large-scale aggregation and filtering
-- Interactive dashboard link with full filter capability (by date, borough, complaint type, etc.)
-- Supporting documentation and transformation logic
+| Layer         | Technology                        |
+| ------------- | --------------------------------- |
+| Data Source   | NYC Open Data (311 Requests 2024) |
+| Processing    | Python (Pandas, datetime parsing) |
+| Storage       | Google Cloud Storage (GCS)        |
+| Query Engine  | Google BigQuery                   |
+| Visualization | Looker Studio                     |
+
+---
+
+## Functional Capabilities
+
+* Complaint volume and resolution time metrics across agencies
+* Temporal patterns by hour, day, and month
+* Dynamic filtering by borough, agency, complaint type
+* Geospatial mapping via lat/lon fields
+* Fully hosted in a cloud-native analytics stack
+
+---
+
+## Impact Potential
+
+* Enables data-informed decisions around **staffing, outreach, and agency resourcing**
+* Highlights **bottlenecks and trends** in complaint handling
+* Brings **transparency and clarity** to public operations
+* Designed to support year-over-year tracking and future anomaly detection
 
 ---
 
